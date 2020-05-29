@@ -1,0 +1,27 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+#map {
+    height: 60%;
+}
+
+#table {
+    height: 40%;
+    overflow: scroll;
+}
+
+/* Optional: Makes the sample page fill the window. */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* .tableHeader{
+    position: absolute;
+} */
+
+/* .container{
+    display: inline;
+} */

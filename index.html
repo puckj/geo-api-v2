@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get lat,long</title>
+    <link rel="stylesheet" type="text/css" href="/style/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div>
+                <form>
+                    <input id="address" type="text" placeholder="ที่อยู่" required>
+                    <button id="submit" type="button">Search</button>
+                </form>
+                <div class="lat-lng-items">
+                    <p>lat: </p><input id="latitude" type="text" disabled>
+                </div>
+                <div class="lat-lng-items">
+                    <p>lng: </p><input id="longitude" type="text" disabled>
+                </div>
+            </div>
+            <div>
+                <table id="myTable">
+                    <tr>
+                        <th>ที่อยู่</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                    </tr>
+                </table>
+                <button id="addBtn" type="button" onclick="addLocationHandler()">Add</button>
+                <button id="confirmBtn" type="button" onclick="confirmLocationHandler()">Confirm</button>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="/javascript/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1s0zEzy_41a4BtYzddBWdDYXDsgrQ7zQ&callback=initMap"
+        async defer></script>
+</body>
+
+</html>
