@@ -77,7 +77,7 @@ function initMap() {
     let data = Object.keys(positionArrTable[0]);
     generateTableHead(table, data);
     generateTable(table, positionArrTable);
-    localStorage.arrData = JSON.stringify(trucksArr, 0);
+    // localStorage.arrData = JSON.stringify(trucksArr, 0);
 }
 
 function modifyArr(trucksArr, positionArrTable) {
@@ -169,4 +169,9 @@ function generateTable(table, data) {
             cell.appendChild(text);
         }
     }
+}
+
+function nextBtnHandler() {
+    localStorage.arrData = JSON.stringify(trucksArr, 0);
+    location.replace("http://localhost:3021/map2");
 }

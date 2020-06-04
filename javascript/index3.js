@@ -31,6 +31,7 @@ function setMarker() {
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(item.lat, item.lng),
             map: maps,
+            label: (item.index).toString()
         });
         markers.push(marker);
 

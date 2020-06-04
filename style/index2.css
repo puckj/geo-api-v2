@@ -18,6 +18,12 @@ html, body {
     padding: 0;
 }
 
+button{
+    position: absolute;
+    top: 15px;
+    left: 300px;
+}
+
 /* .tableHeader{
     position: absolute;
 } */
