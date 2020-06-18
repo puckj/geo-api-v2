@@ -46,6 +46,6 @@ app.get('/map2', async (req, res) => {
     res.sendFile(path.join(__dirname+'/index3.html'));
 });
 
-app.listen(3021, () => {
-    console.log('Start server at port 3021.')
+app.listen(3020, () => {
+    console.log('Start server at port 3020.')
 })

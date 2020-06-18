@@ -173,5 +173,5 @@ function generateTable(table, data) {
 
 function nextBtnHandler() {
     localStorage.arrData = JSON.stringify(trucksArr, 0);
-    location.replace("http://localhost:3021/map2");
+    location.replace("http://167.71.194.31:3020/map2");
 }

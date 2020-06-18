@@ -98,7 +98,7 @@ function confirmLocationHandler() {
     let rowLength = document.getElementById("myTable").rows.length;
     if (rowLength > 5) {
         localStorage.myArrData = JSON.stringify(positionArr);
-        location.replace("http://localhost:3021/map");
+        location.replace("http://167.71.194.31:3020/map");
     } else {
         alert('กรุณาเพิ่มตำแหน่งในตารางให้ครบ');
     }
